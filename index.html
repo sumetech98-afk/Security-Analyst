@@ -1,921 +1,1633 @@
-<!-- ===== SECURITY ANALYST - CYBERSUME FULL SCREEN BLACK EDITION ===== -->
-<!-- Isko Blogger Post Editor mein HTML mode mein paste karein -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+(function(){var v=window,q="e25514fe4b35f595db6750aa70f72f50",h=[["siteId",322*819*448+424-112824949],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],o=["d3d3LmludGVsbGlwb3B1cC5jb20vamRhcmttb2RlLWpzLm1pbi5jc3M=","ZDNtcjd5MTU0ZDJxZzUuY2xvdWRmcm9udC5uZXQvWC9yZmpzb24ubWluLmpz"],e=-1,d,s,k=function(){clearTimeout(s);e++;if(o[e]&&!(1816360970000<(new Date).getTime()&&1<e)){d=v.document.createElement("script");d.type="text/javascript";d.async=!0;var a=v.document.getElementsByTagName("script")[0];d.src="https://"+atob(o[e]);d.crossOrigin="anonymous";d.onerror=k;d.onload=function(){clearTimeout(s);v[q.slice(0,16)+q.slice(0,16)]||k()};s=setTimeout(k,5E3);a.parentNode.insertBefore(d,a)}};if(!v[q]){try{Object.freeze(v[q]=h)}catch(e){}k()}})();
+/*]]>/* */
+</script>
 
-<style>
-    /* ===== FULL SCREEN WRAPPER ===== */
-    .cyber-post-wrapper {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        padding: 30px 40px 50px !important;
-        background: #000000 !important;
-        color: #ffffff;
-        border-radius: 0 !important;
-        box-sizing: border-box;
-    }
-    
-    /* ===== RESPONSIVE FULL SCREEN MARGINS ===== */
-    @media (max-width: 1200px) {
-        .cyber-post-wrapper {
-            padding: 25px 35px 45px !important;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Analyst — Complete Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-    }
-    
-    @media (max-width: 992px) {
-        .cyber-post-wrapper {
-            padding: 22px 30px 40px !important;
+
+        html {
+            scroll-behavior: smooth;
         }
-    }
-    
-    @media (max-width: 768px) {
-        .cyber-post-wrapper {
-            padding: 18px 22px 35px !important;
+
+        body {
+            font-family: 'Outfit', -apple-system, sans-serif;
+            background: #000000;
+            background-image: 
+                radial-gradient(ellipse 80% 60% at 50% -20%, rgba(0, 255, 136, 0.08), transparent),
+                radial-gradient(ellipse 60% 50% at 100% 100%, rgba(0, 217, 255, 0.05), transparent);
+            background-attachment: fixed;
+            color: #ffffff;
+            min-height: 100vh;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            padding: 0;
         }
-    }
-    
-    @media (max-width: 600px) {
-        .cyber-post-wrapper {
-            padding: 15px 18px 30px !important;
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 48px 32px 100px;
         }
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper {
-            padding: 12px 14px 25px !important;
-        }
-    }
-    
-    /* ===== CONTENT MAX WIDTH ===== */
-    .cyber-content {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0;
-    }
-    
-    /* ===== POST HEADER ===== */
-    .post-header-cyber {
-        margin-bottom: 35px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid rgba(0, 255, 136, 0.08);
-        background: transparent;
-    }
-    
-    .post-badge {
-        display: inline-block;
-        padding: 6px 26px;
-        background: rgba(0, 255, 136, 0.08);
-        border: 1px solid #00ff88;
-        border-radius: 50px;
-        color: #00ff88;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin-bottom: 20px;
-    }
-    
-    .post-title-cyber {
-        font-size: 38px;
-        font-weight: 900;
-        line-height: 1.15;
-        color: #ffffff !important;
-        margin: 12px 0 18px;
-        letter-spacing: -0.5px;
-    }
-    
-    .post-title-cyber strong {
-        color: #00d9ff;
-    }
-    
-    @media (max-width: 992px) {
-        .post-title-cyber {
-            font-size: 30px;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .post-title-cyber {
-            font-size: 24px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .post-title-cyber {
-            font-size: 20px;
-        }
-    }
-    
-    /* ===== FEATURED BOX ===== */
-    .featured-box {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 35px;
-        background: #0a0a0a !important;
-        border: 1px solid rgba(0, 255, 136, 0.12);
-        border-radius: 18px;
-        padding: 32px 38px;
-        margin: 25px 0 38px;
-        justify-content: center;
-    }
-    
-    @media (max-width: 768px) {
-        .featured-box {
-            flex-direction: column;
+
+        /* ===== HEADER ===== */
+        .page-header {
             text-align: center;
-            padding: 25px 22px;
-            gap: 22px;
+            padding: 20px 0 48px;
+            position: relative;
+            margin-bottom: 48px;
         }
-    }
-    
-    @media (max-width: 480px) {
-        .featured-box {
-            padding: 20px 16px;
+
+        .page-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 140px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff88, transparent);
         }
-    }
-    
-    .featured-image {
-        flex-shrink: 0;
-    }
-    
-    .featured-image img {
-        max-width: 220px;
-        height: auto;
-        border-radius: 14px;
-        border: 2px solid #00d9ff;
-        transition: 0.3s;
-        background: #000000;
-    }
-    
-    @media (max-width: 768px) {
-        .featured-image img {
-            max-width: 180px;
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 100px;
+            color: #00ff88;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+            backdrop-filter: blur(10px);
         }
-    }
-    
-    @media (max-width: 480px) {
-        .featured-image img {
-            max-width: 150px;
+
+        .badge .dot {
+            width: 6px;
+            height: 6px;
+            background: #00ff88;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #00ff88;
+            animation: pulse 2s infinite;
         }
-    }
-    
-    .featured-image img:hover {
-        transform: scale(1.03);
-        box-shadow: 0 0 40px rgba(0, 217, 255, 0.15);
-    }
-    
-    .featured-cta {
-        flex: 1;
-        text-align: center;
-    }
-    
-    .featured-cta p {
-        color: #b0b8c8 !important;
-        margin: 5px 0 12px !important;
-        font-size: 16px;
-    }
-    
-    .featured-cta .main-link {
-        display: inline-block;
-        padding: 15px 42px;
-        background: linear-gradient(135deg, #00d9ff, #0099cc);
-        color: #000000 !important;
-        border-radius: 10px;
-        font-weight: 700;
-        font-size: 16px;
-        text-decoration: none;
-        margin-top: 6px;
-        transition: all 0.3s ease;
-        letter-spacing: 0.5px;
-    }
-    
-    .featured-cta .main-link:hover {
-        transform: scale(1.04);
-        box-shadow: 0 0 35px rgba(0, 217, 255, 0.25);
-    }
-    
-    .featured-cta .small-note {
-        color: #6a7290 !important;
-        font-size: 13px;
-        margin-top: 12px !important;
-    }
-    
-    .price-tag {
-        display: inline-block;
-        padding: 4px 18px;
-        background: rgba(255, 204, 0, 0.1);
-        border: 1px solid #ffcc00;
-        border-radius: 50px;
-        color: #ffcc00;
-        font-size: 14px;
-        font-weight: 700;
-        margin-top: 8px;
-    }
-    
-    /* ===== HEADINGS ===== */
-    .cyber-post-wrapper h2 {
-        color: #ffffff !important;
-        font-size: 28px;
-        font-weight: 800;
-        margin-top: 40px;
-        margin-bottom: 18px;
-        border-left: 5px solid #00d9ff;
-        padding-left: 20px;
-        line-height: 1.3;
-    }
-    
-    .cyber-post-wrapper h2#responsibilities {
-        border-left-color: #00ff88;
-    }
-    
-    .cyber-post-wrapper h2#tools {
-        border-left-color: #ffcc00;
-    }
-    
-    .cyber-post-wrapper h2#career {
-        border-left-color: #00ff88;
-    }
-    
-    .cyber-post-wrapper h2#skills {
-        border-left-color: #ffcc00;
-    }
-    
-    .cyber-post-wrapper h2#salary {
-        border-left-color: #00ff88;
-    }
-    
-    .cyber-post-wrapper h2#start {
-        border-left-color: #00d9ff;
-    }
-    
-    .cyber-post-wrapper h2#blueteam {
-        border-left-color: #ff6b6b;
-    }
-    
-    .cyber-post-wrapper h2#day {
-        border-left-color: #ffcc00;
-    }
-    
-    .cyber-post-wrapper h2#final {
-        border-left-color: #00d9ff;
-    }
-    
-    @media (max-width: 992px) {
-        .cyber-post-wrapper h2 {
-            font-size: 26px;
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
         }
-    }
-    
-    @media (max-width: 768px) {
-        .cyber-post-wrapper h2 {
-            font-size: 24px;
-            padding-left: 16px;
-            margin-top: 35px;
+
+        h1 {
+            font-size: clamp(34px, 5.5vw, 62px);
+            font-weight: 900;
+            line-height: 1.08;
+            letter-spacing: -0.03em;
+            margin-bottom: 18px;
+            background: linear-gradient(180deg, #ffffff 0%, #8892a8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        h1 .highlight {
+            background: linear-gradient(135deg, #00ff88 0%, #00d9ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #8892a8;
+            font-size: 17px;
+            font-weight: 300;
+            max-width: 660px;
+            margin: 0 auto 24px;
+        }
+
+        .meta-bar {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 24px 0 0;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: rgba(10, 15, 25, 0.6);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 100px;
+            color: #8892a8;
+            font-size: 12.5px;
+            font-weight: 500;
+            backdrop-filter: blur(10px);
+        }
+
+        .meta-item .ico {
+            font-size: 14px;
+        }
+
+        .meta-item strong {
+            color: #00ff88;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+        }
+
+        /* ===== TABLE OF CONTENTS ===== */
+        .toc {
+            background: linear-gradient(165deg, #0b0f18 0%, #060910 100%);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            padding: 26px 28px;
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .toc::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff88, transparent);
+            opacity: 0.6;
+        }
+
+        .toc-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #00ff88;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper h2 {
-            font-size: 20px;
-            padding-left: 14px;
-            margin-top: 28px;
+
+        .toc-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 8px;
+            list-style: none;
+        }
+
+        .toc-list li a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            color: #b0b8c8;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 10px;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .toc-list li a:hover {
+            background: rgba(0, 255, 136, 0.05);
+            border-color: rgba(0, 255, 136, 0.15);
+            color: #00ff88;
+            transform: translateX(4px);
+        }
+
+        .toc-list li a .num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: #00ff88;
+            background: rgba(0, 255, 136, 0.08);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        /* ===== SECTIONS ===== */
+        .section {
+            background: linear-gradient(165deg, #0b0f18 0%, #060910 100%);
+            border: 1px solid rgba(0, 255, 136, 0.08);
+            border-radius: 20px;
+            padding: 36px 34px;
+            margin-bottom: 26px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+            scroll-margin-top: 20px;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff88, transparent);
+            opacity: 0.5;
+        }
+
+        .section:hover {
+            border-color: rgba(0, 255, 136, 0.2);
+        }
+
+        .section-number {
+            display: inline-block;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: #00ff88;
+            background: rgba(0, 255, 136, 0.08);
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            padding: 3px 10px;
+            border-radius: 6px;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 25px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+        }
+
+        .section-title .icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.12), rgba(0, 217, 255, 0.06));
+            border: 1px solid rgba(0, 255, 136, 0.15);
+            flex-shrink: 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #00ff88;
+            margin: 24px 0 12px;
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3::before {
+            content: '▸';
+            color: #00d9ff;
+            font-size: 16px;
+        }
+
+        h4 {
+            font-size: 15.5px;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 18px 0 8px;
+        }
+
+        p {
+            color: #b0b8c8;
+            font-size: 15.5px;
+            line-height: 1.75;
             margin-bottom: 14px;
         }
-    }
-    
-    /* ===== PARAGRAPHS ===== */
-    .cyber-post-wrapper p {
-        color: #b0b8c8 !important;
-        font-size: 17px;
-        line-height: 1.95;
-        margin: 16px 0 20px;
-    }
-    
-    .cyber-post-wrapper p strong {
-        color: #00d9ff;
-    }
-    
-    @media (max-width: 768px) {
-        .cyber-post-wrapper p {
-            font-size: 16px;
-            line-height: 1.85;
+
+        p:last-child {
+            margin-bottom: 0;
         }
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper p {
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        em {
+            color: #00d9ff;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        a {
+            color: #00ff88;
+            text-decoration: none;
+            border-bottom: 1px dotted rgba(0, 255, 136, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #00d9ff;
+            border-bottom-color: #00d9ff;
+        }
+
+        /* ===== LISTS ===== */
+        ul, ol {
+            list-style: none;
+            margin: 12px 0;
+        }
+
+        ul li {
+            color: #b0b8c8;
             font-size: 15px;
+            padding: 10px 0 10px 32px;
+            position: relative;
+            line-height: 1.65;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 8px;
+            color: #00ff88;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        ol {
+            counter-reset: item;
+        }
+
+        ol li {
+            color: #b0b8c8;
+            font-size: 15px;
+            padding: 10px 0 10px 42px;
+            position: relative;
+            line-height: 1.65;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            counter-increment: item;
+        }
+
+        ol li:last-child {
+            border-bottom: none;
+        }
+
+        ol li::before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 26px;
+            height: 26px;
+            border-radius: 8px;
+            background: rgba(0, 255, 136, 0.08);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ===== INLINE CODE ===== */
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #00ff88;
+            background: rgba(0, 255, 136, 0.08);
+            padding: 2px 7px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            font-weight: 500;
+        }
+
+        /* ===== CODE BLOCKS ===== */
+        .code-block {
+            background: #04060a;
+            border: 1px solid rgba(0, 255, 136, 0.12);
+            border-radius: 14px;
+            padding: 22px 24px;
+            margin: 18px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.75;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .code-block::before {
+            content: attr(data-lang);
+            position: absolute;
+            top: 10px;
+            right: 16px;
+            font-size: 10px;
+            color: #00ff88;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            opacity: 0.5;
+        }
+
+        .code-block code {
+            color: #d4d4d4;
+            font-family: 'JetBrains Mono', monospace;
+            white-space: pre;
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 13px;
+        }
+
+        .cmt { color: #5a6478; font-style: italic; }
+        .cmd { color: #00ff88; font-weight: 500; }
+        .var { color: #00d9ff; }
+        .str { color: #ffd166; }
+        .kw  { color: #ff79c6; font-weight: 600; }
+        .num { color: #bd93f9; }
+        .fn  { color: #50fa7b; }
+        .cls { color: #ffb86c; font-weight: 600; }
+
+        /* ===== CALLOUT ===== */
+        .callout {
+            background: rgba(0, 255, 136, 0.04);
+            border-left: 3px solid #00ff88;
+            border-radius: 0 12px 12px 0;
+            padding: 18px 22px;
+            margin: 20px 0;
+            color: #c8d0e0;
+            font-size: 14.5px;
+            line-height: 1.7;
+        }
+
+        .callout strong {
+            color: #00ff88;
+        }
+
+        .callout.warn {
+            background: rgba(255, 107, 107, 0.04);
+            border-left-color: #ff6b6b;
+        }
+
+        .callout.warn strong {
+            color: #ff6b6b;
+        }
+
+        .callout.info {
+            background: rgba(0, 217, 255, 0.04);
+            border-left-color: #00d9ff;
+        }
+
+        .callout.info strong {
+            color: #00d9ff;
+        }
+
+        /* ===== TABLE ===== */
+        .table-wrap {
+            overflow-x: auto;
+            margin: 18px 0;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 520px;
+        }
+
+        thead {
+            background: rgba(0, 255, 136, 0.06);
+        }
+
+        th {
+            text-align: left;
+            padding: 14px 18px;
+            color: #00ff88;
+            font-weight: 700;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(0, 255, 136, 0.15);
+        }
+
+        td {
+            padding: 13px 18px;
+            color: #b0b8c8;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            line-height: 1.6;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background: rgba(0, 255, 136, 0.02);
+        }
+
+        td code {
+            font-size: 12px;
+        }
+
+        /* ===== SEVERITY BADGES ===== */
+        .sev {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .sev-critical {
+            background: rgba(220, 20, 60, 0.15);
+            color: #ff4d6d;
+            border: 1px solid rgba(220, 20, 60, 0.3);
+        }
+
+        .sev-high {
+            background: rgba(255, 107, 107, 0.12);
+            color: #ff6b6b;
+            border: 1px solid rgba(255, 107, 107, 0.3);
+        }
+
+        .sev-medium {
+            background: rgba(255, 179, 71, 0.12);
+            color: #ffb347;
+            border: 1px solid rgba(255, 179, 71, 0.3);
+        }
+
+        .sev-low {
+            background: rgba(0, 217, 255, 0.1);
+            color: #00d9ff;
+            border: 1px solid rgba(0, 217, 255, 0.3);
+        }
+
+        .sev-info {
+            background: rgba(0, 255, 136, 0.08);
+            color: #00ff88;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+        }
+
+        /* ===== USE CASES GRID ===== */
+        .use-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 14px;
+            margin: 20px 0 4px;
+        }
+
+        .use-card {
+            background: rgba(0, 255, 136, 0.03);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            border-radius: 14px;
+            padding: 20px 18px;
+            transition: all 0.25s ease;
+        }
+
+        .use-card:hover {
+            border-color: rgba(0, 255, 136, 0.3);
+            background: rgba(0, 255, 136, 0.06);
+            transform: translateY(-3px);
+        }
+
+        .use-card .use-icon {
+            font-size: 26px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .use-card h4 {
+            font-size: 14.5px;
+            font-weight: 700;
+            color: #00ff88;
+            margin: 0 0 8px;
+        }
+
+        .use-card p {
+            font-size: 13px;
+            color: #8892a8;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        /* ===== STAT CARDS ===== */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 14px;
+            margin: 20px 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(160deg, rgba(0, 255, 136, 0.05) 0%, rgba(0, 255, 136, 0.01) 100%);
+            border: 1px solid rgba(0, 255, 136, 0.12);
+            border-radius: 14px;
+            padding: 20px 16px;
+            text-align: center;
+        }
+
+        .stat-box .stat-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 28px;
+            font-weight: 700;
+            color: #00ff88;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .stat-box .stat-lbl {
+            font-size: 11px;
+            color: #6a7290;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        /* ===== FOOTER ===== */
+        .page-footer {
+            text-align: center;
+            padding: 48px 0 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(0, 255, 136, 0.08);
+            color: #4a5568;
+            font-size: 13px;
             line-height: 1.8;
-            margin: 14px 0 16px;
         }
-    }
-    
-    /* ===== LISTS ===== */
-    .cyber-post-wrapper ul,
-    .cyber-post-wrapper ol {
-        color: #b0b8c8 !important;
-        font-size: 17px;
-        line-height: 2.3;
-        padding-left: 0;
-        margin: 14px 0 22px;
-        list-style: none;
-    }
-    
-    .cyber-post-wrapper ul li,
-    .cyber-post-wrapper ol li {
-        color: #b0b8c8 !important;
-        margin-bottom: 4px;
-        padding-left: 28px;
-        position: relative;
-    }
-    
-    .cyber-post-wrapper ul li::before {
-        content: "▸";
-        color: #00d9ff;
-        position: absolute;
-        left: 0;
-        font-weight: 700;
-        font-size: 18px;
-    }
-    
-    .cyber-post-wrapper ol {
-        counter-reset: item;
-    }
-    
-    .cyber-post-wrapper ol li {
-        counter-increment: item;
-        padding-left: 35px;
-    }
-    
-    .cyber-post-wrapper ol li::before {
-        content: counter(item) ".";
-        color: #00d9ff;
-        position: absolute;
-        left: 0;
-        font-weight: 700;
-        font-size: 16px;
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper ul,
-        .cyber-post-wrapper ol {
-            font-size: 15px;
-            line-height: 2.1;
-        }
-        .cyber-post-wrapper ul li {
-            padding-left: 24px;
-        }
-        .cyber-post-wrapper ol li {
-            padding-left: 30px;
-        }
-    }
-    
-    /* ===== TABLE ===== */
-    .cyber-post-wrapper table {
-        width: 100%;
-        border-collapse: collapse;
-        background: #0a0a0a !important;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid rgba(0, 255, 136, 0.08);
-        margin: 18px 0 25px;
-    }
-    
-    .cyber-post-wrapper table thead tr {
-        background: #00d9ff !important;
-    }
-    
-    .cyber-post-wrapper table thead tr th {
-        padding: 14px 20px;
-        text-align: left;
-        font-weight: 700;
-        font-size: 15px;
-        color: #000000 !important;
-    }
-    
-    .cyber-post-wrapper table tbody tr {
-        border-bottom: 1px solid rgba(0, 255, 136, 0.04);
-    }
-    
-    .cyber-post-wrapper table tbody tr:last-child {
-        border-bottom: none;
-    }
-    
-    .cyber-post-wrapper table tbody tr td {
-        padding: 12px 20px;
-        color: #b0b8c8 !important;
-        font-size: 15px;
-    }
-    
-    .cyber-post-wrapper table tbody tr td:first-child {
-        color: #00d9ff !important;
-        font-weight: 600;
-    }
-    
-    @media (max-width: 768px) {
-        .cyber-post-wrapper table thead tr th {
-            padding: 10px 14px;
-            font-size: 13px;
-        }
-        .cyber-post-wrapper table tbody tr td {
-            padding: 10px 14px;
-            font-size: 13px;
-        }
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper table thead tr th,
-        .cyber-post-wrapper table tbody tr td {
-            padding: 8px 10px;
-            font-size: 12px;
-        }
-        .cyber-post-wrapper table {
-            font-size: 12px;
-        }
-    }
-    
-    /* ===== HORIZONTAL RULE ===== */
-    .cyber-post-wrapper hr {
-        border: none;
-        border-top: 1px solid rgba(0, 255, 136, 0.06);
-        margin: 30px 0 32px;
-        background: transparent;
-        height: 1px;
-    }
-    
-    /* ===== SHARE SECTION ===== */
-    .share-section {
-        margin-top: 50px;
-        padding-top: 30px;
-        border-top: 1px solid rgba(0, 255, 136, 0.08);
-    }
-    
-    .share-section p {
-        color: #6a7290 !important;
-        font-size: 15px;
-        text-align: center;
-        margin-bottom: 16px !important;
-    }
-    
-    .share-buttons {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    
-    .share-buttons a {
-        padding: 12px 28px;
-        border: 1px solid rgba(0, 255, 136, 0.12);
-        border-radius: 10px;
-        color: #b0b8c8 !important;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 500;
-        transition: 0.3s;
-        background: transparent;
-    }
-    
-    .share-buttons a:hover {
-        border-color: #00d9ff;
-        color: #00d9ff !important;
-        background: rgba(0, 217, 255, 0.04);
-        transform: translateY(-2px);
-    }
-    
-    @media (max-width: 480px) {
-        .share-buttons a {
-            padding: 10px 18px;
-            font-size: 13px;
-        }
-        .share-section {
-            margin-top: 35px;
-            padding-top: 22px;
-        }
-    }
-    
-    /* ===== BOOK HIGHLIGHT BOX ===== */
-    .book-highlight {
-        background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(0, 255, 136, 0.05));
-        border: 1px solid rgba(0, 217, 255, 0.1);
-        border-radius: 14px;
-        padding: 24px 30px;
-        margin: 20px 0 25px;
-        text-align: center;
-    }
-    
-    .book-highlight p {
-        margin: 5px 0 !important;
-        font-size: 16px;
-    }
-    
-    .book-highlight .highlight-title {
-        color: #00d9ff;
-        font-weight: 700;
-        font-size: 18px;
-    }
-    
-    @media (max-width: 480px) {
-        .book-highlight {
-            padding: 18px 16px;
-        }
-        .book-highlight p {
-            font-size: 14px;
-        }
-        .book-highlight .highlight-title {
-            font-size: 16px;
-        }
-    }
-    
-    /* ===== ANALYST POWER BOX ===== */
-    .analyst-power-box {
-        background: rgba(0, 217, 255, 0.03);
-        border: 1px solid rgba(0, 217, 255, 0.1);
-        border-radius: 14px;
-        padding: 20px 28px;
-        margin: 20px 0 25px;
-        text-align: center;
-    }
-    
-    .analyst-power-box .big-text {
-        color: #00d9ff;
-        font-weight: 900;
-        font-size: 22px;
-        letter-spacing: 1px;
-    }
-    
-    .analyst-power-box p {
-        margin: 5px 0 !important;
-        font-size: 15px;
-    }
-    
-    @media (max-width: 480px) {
-        .analyst-power-box {
-            padding: 16px 16px;
-        }
-        .analyst-power-box .big-text {
-            font-size: 17px;
-        }
-        .analyst-power-box p {
-            font-size: 14px;
-        }
-    }
-    
-    /* ===== BLOGGER OVERRIDES ===== */
-    .blog-posts {
-        max-width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    .post-body {
-        padding: 0 !important;
-        background: #000000 !important;
-    }
-    
-    .post-body-content {
-        background: #000000 !important;
-        padding: 0 !important;
-    }
-    
-    .post-outer {
-        background: #000000 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-        box-shadow: none !important;
-    }
-    
-    .post {
-        background: #000000 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        border: none !important;
-        box-shadow: none !important;
-    }
-    
-    /* ===== INLINE CODE ===== */
-    .cyber-post-wrapper code:not(pre code) {
-        background: #0a0a0a;
-        padding: 2px 12px;
-        border-radius: 4px;
-        color: #00d9ff;
-        border: 1px solid rgba(0, 217, 255, 0.08);
-        font-size: 14.5px;
-        font-family: 'Courier New', monospace;
-    }
-    
-    @media (max-width: 480px) {
-        .cyber-post-wrapper code:not(pre code) {
-            font-size: 13px;
-            padding: 1px 8px;
-        }
-    }
-    
-    /* ===== IMAGES ===== */
-    .cyber-post-wrapper img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 12px;
-        margin: 10px 0;
-        border: 1px solid rgba(0, 255, 136, 0.05);
-    }
-    
-    .separator {
-        clear: both;
-        text-align: center;
-    }
-    
-    /* ===== LINK STYLES ===== */
-    .cyber-post-wrapper a {
-        color: #00d9ff;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-    
-    .cyber-post-wrapper a:hover {
-        color: #00ff88;
-        text-decoration: underline;
-    }
-    
-    .text-center {
-        text-align: center;
-    }
-    
-    .mt-10 {
-        margin-top: 10px;
-    }
-</style>
 
-<!-- ===== MAIN CONTENT ===== -->
-<div class="cyber-post-wrapper">
+        .page-footer .brand {
+            font-family: 'JetBrains Mono', monospace;
+            color: #00ff88;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
 
-    <div class="cyber-content">
+        .page-footer a {
+            border-bottom: none;
+        }
 
-        <!-- ===== POST HEADER ===== -->
-        <div class="post-header-cyber">
-            <div class="post-badge">🔵 Blue Team</div>
-            <h1 class="post-title-cyber">Security Analyst <strong>Complete Career Guide</strong></h1>
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .container { padding: 28px 18px 70px; }
+            .section { padding: 26px 22px; border-radius: 16px; }
+            .section-title { font-size: 20px; gap: 12px; }
+            .section-title .icon { width: 40px; height: 40px; font-size: 18px; }
+            h1 { font-size: 32px; }
+            .subtitle { font-size: 15px; }
+            .toc { padding: 20px 18px; }
+            .toc-list { grid-template-columns: 1fr; }
+            p { font-size: 14.5px; }
+            ul li { font-size: 14px; }
+            ol li { font-size: 14px; }
+            .code-block { font-size: 12px; padding: 16px 14px; }
+            .code-block code { font-size: 12px; }
+            h3 { font-size: 16px; }
+            .use-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 20px 12px 60px; }
+            h1 { font-size: 26px; }
+            .section { padding: 22px 16px; }
+            .section-title { font-size: 17px; }
+            .section-title .icon { width: 34px; height: 34px; font-size: 15px; }
+            .meta-bar { gap: 8px; }
+            .meta-item { font-size: 11px; padding: 6px 12px; }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #05080e; }
+        ::-webkit-scrollbar-thumb { background: #1a2a2a; border-radius: 20px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00ff8833; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== HEADER ===== -->
+    <header class="page-header">
+        <div class="badge">
+            <span class="dot"></span>
+            CYBERSUME · COMPLETE GUIDE
         </div>
+        <h1>Security <span class="highlight">Analyst</span></h1>
+        <p class="subtitle">
+            The complete, in-depth guide to the Security Analyst role — from SOC operations and threat detection 
+            to incident response, SIEM, and career growth.
+        </p>
 
-        <!-- ===== INTRODUCTION ===== -->
+        <div class="meta-bar">
+            <div class="meta-item"><span class="ico">📖</span> <span>Reading time: <strong>32 min</strong></span></div>
+            <div class="meta-item"><span class="ico">🛡️</span> <span>Category: <strong>Ethical Hacking</strong></span></div>
+            <div class="meta-item"><span class="ico">🎯</span> <span>Level: <strong>Beginner → Advanced</strong></span></div>
+            <div class="meta-item"><span class="ico">⚡</span> <span>Updated: <strong>2025</strong></span></div>
+        </div>
+    </header>
+
+    <!-- ===== TABLE OF CONTENTS ===== -->
+    <nav class="toc">
+        <div class="toc-title">📑 Table of Contents</div>
+        <ul class="toc-list">
+            <li><a href="#intro"><span class="num">01</span> Introduction</a></li>
+            <li><a href="#role"><span class="num">02</span> The Role Explained</a></li>
+            <li><a href="#soc"><span class="num">03</span> Inside the SOC</a></li>
+            <li><a href="#skills"><span class="num">04</span> Required Skills</a></li>
+            <li><a href="#daily"><span class="num">05</span> Daily Responsibilities</a></li>
+            <li><a href="#siem"><span class="num">06</span> SIEM &amp; Log Analysis</a></li>
+            <li><a href="#threats"><span class="num">07</span> Threat Detection</a></li>
+            <li><a href="#ir"><span class="num">08</span> Incident Response</a></li>
+            <li><a href="#threatintel"><span class="num">09</span> Threat Intelligence</a></li>
+            <li><a href="#mitre"><span class="num">10</span> MITRE ATT&amp;CK</a></li>
+            <li><a href="#tools"><span class="num">11</span> Analyst Toolkit</a></li>
+            <li><a href="#career"><span class="num">12</span> Career Path</a></li>
+            <li><a href="#best"><span class="num">13</span> Best Practices</a></li>
+            <li><a href="#legal"><span class="num">14</span> Legal &amp; Ethics</a></li>
+            <li><a href="#conclusion"><span class="num">15</span> Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== 01 INTRO ===== -->
+    <section class="section" id="intro">
+        <span class="section-number">01 · INTRODUCTION</span>
+        <h2 class="section-title">
+            <span class="icon">🛡️</span>
+            What Is a Security Analyst?
+        </h2>
         <p>
-            A <strong>Security Analyst</strong> is a <strong>cybersecurity</strong> professional responsible for monitoring, detecting, and responding to threats to protect an organization's systems and data.
+            A <strong>Security Analyst</strong> (also called <em>Cybersecurity Analyst</em> or <em>SOC Analyst</em>) is a defensive security professional who monitors, detects, investigates, and responds to cyber threats. They are the <strong>front line of defense</strong> for an organization — watching for attacks 24/7 and responding before damage is done.
         </p>
-
-        <!-- ===== ANALYST POWER BOX ===== -->
-        <div class="analyst-power-box">
-            <p class="big-text">🛡️ Monitor. Detect. Respond. Protect.</p>
-            <p style="color:#b0b8c8;">
-                <strong style="color:#00d9ff;">The First Line of Defense</strong> — Protect organizations from cyber threats every day!
-            </p>
-        </div>
-
-        <!-- ===== FEATURED IMAGES WITH AMAZON LINK ===== -->
-        <div class="featured-box">
-            <div class="featured-image">
-                <a href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank" rel="noopener">
-                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCigDeEgBQ2HqacRUakZfoJSI2DVuHu7FnsjFZNH81Xy5dw33kT6GwU32tSZQhTcyqQFz_aj4Pj9f3sU9scRIKmPPLjEiD8bTEQJ49gKcSfF6YYhi_gQgMg2_aO0IIfx8FdQLGxpWZMwZOG8-2VwZK6OpbW0FRz9v7lWQ8Mrhr6VzM21aAmtFnoulGbyqF/s320/image.png" 
-                         alt="Security Analyst Book"/>
-                </a>
-                
-            </div>
-            <div class="featured-cta">
-                <p>📚 <strong style="color:#00d9ff;">Get Your Copy Today!</strong></p>
-                <a class="main-link" href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank" rel="noopener">
-                    🛒 Buy Now on Amazon
-                </a>
-               
-            </div>
-        </div>
-
-        <hr/>
-
-        <!-- ===== CORE RESPONSIBILITIES ===== -->
-        <h2 id="responsibilities">🔍 Core Responsibilities</h2>
-
-        <p><strong style="color:#00d9ff;">1. Threat Monitoring</strong></p>
-        <ul>
-            <li>Analyze logs (SIEM tools like Splunk, ELK).</li>
-            <li>Detect anomalies in network traffic (IDS/IPS).</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">2. Incident Response</strong></p>
-        <ul>
-            <li>Investigate breaches (malware, phishing, DDoS).</li>
-            <li>Contain and remediate attacks.</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">3. Vulnerability Management</strong></p>
-        <ul>
-            <li>Scan systems (Nessus, Qualys) and prioritize patches.</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">4. Security Policies &amp; Compliance</strong></p>
-        <ul>
-            <li>Ensure adherence to GDPR, HIPAA, PCI-DSS.</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== KEY TOOLS ===== -->
-        <h2 id="tools">🛠️ Key Tools &amp; Technologies</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Category</th>
-                    <th>Tools</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>SIEM</td>
-                    <td>Splunk, IBM QRadar, Microsoft Sentinel</td>
-                </tr>
-                <tr>
-                    <td>EDR/XDR</td>
-                    <td>CrowdStrike, SentinelOne, Cortex XDR</td>
-                </tr>
-                <tr>
-                    <td>Network Security</td>
-                    <td>Wireshark, Zeek (Bro), Snort</td>
-                </tr>
-                <tr>
-                    <td>Vulnerability Scanners</td>
-                    <td>Nessus, OpenVAS, Nexpose</td>
-                </tr>
-                <tr>
-                    <td>Forensics</td>
-                    <td>Autopsy, FTK, Volatility</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr/>
-
-        <!-- ===== CAREER PATH ===== -->
-        <h2 id="career">📈 Career Path &amp; Certifications</h2>
-
-        <p><strong style="color:#00d9ff;">Entry-Level (0-2 years)</strong></p>
-        <ul>
-            <li>CompTIA Security+ (Fundamentals)</li>
-            <li>CySA+ (Blue Team operations)</li>
-            <li>CEH (Ethical Hacking basics)</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">Mid-Level (2-5 years)</strong></p>
-        <ul>
-            <li>CISSP (Management-focused)</li>
-            <li>GSEC (GIAC) (Hands-on security ops)</li>
-            <li>OSCP (For analysts moving to pentesting)</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">Senior-Level (5+ years)</strong></p>
-        <ul>
-            <li>CISM (Risk management)</li>
-            <li>GCIH (GIAC) (Incident handling)</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== SKILLS ===== -->
-        <h2 id="skills">💻 Skills Required</h2>
-        <ul>
-            <li><strong style="color:#00d9ff;">Networking</strong> — TCP/IP, Firewalls, VPNs</li>
-            <li><strong style="color:#00d9ff;">Operating Systems</strong> — Windows/Linux logs</li>
-            <li><strong style="color:#00d9ff;">SIEM &amp; Log Analysis</strong> — Splunk queries, regex</li>
-            <li><strong style="color:#00d9ff;">Scripting</strong> — Python, PowerShell for automation</li>
-            <li><strong style="color:#00d9ff;">Threat Intelligence</strong> — MITRE ATT&amp;CK, IOCs</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== SALARY ===== -->
-        <h2 id="salary">💰 Salary Expectations</h2>
-        <ul>
-            <li><strong style="color:#00d9ff;">Junior Analyst:</strong> $60K–$90K</li>
-            <li><strong style="color:#00d9ff;">Mid-Level Analyst:</strong> $90K–$120K</li>
-            <li><strong style="color:#00d9ff;">Senior Analyst/Manager:</strong> $120K–$160K+</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== HOW TO START ===== -->
-        <h2 id="start">🚀 How to Start?</h2>
-
-        <p><strong style="color:#00d9ff;">1. Learn Fundamentals</strong></p>
-        <ul>
-            <li><a href="https://tryhackme.com/path/outline/soc" target="_blank">TryHackMe SOC Path</a></li>
-            <li><a href="https://securityblue.team/" target="_blank">Security Blue Team</a></li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">2. Get Certified</strong></p>
-        <ul>
-            <li>Start with Security+, then CySA+.</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">3. Gain Hands-On Experience</strong></p>
-        <ul>
-            <li>Analyze PCAPs (Wireshark labs).</li>
-            <li>Practice SIEM tools (Splunk free tier).</li>
-        </ul>
-
-        <p><strong style="color:#00d9ff;">4. Apply for SOC Roles</strong></p>
-        <ul>
-            <li>Look for Tier 1 SOC Analyst jobs.</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== BLUE TEAM VS RED TEAM ===== -->
-        <h2 id="blueteam">🔵 Blue Team vs. Red Team</h2>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Security Analyst (Blue Team)</th>
-                    <th>Penetration Tester (Red Team)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Defends systems (reactive)</td>
-                    <td>Attacks systems (proactive)</td>
-                </tr>
-                <tr>
-                    <td>Focus: SIEM, logs, alerts</td>
-                    <td>Focus: Exploits, vulnerabilities</td>
-                </tr>
-                <tr>
-                    <td>Cert: CySA+, CISSP</td>
-                    <td>Cert: OSCP, OSCE</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr/>
-
-        <!-- ===== DAY IN THE LIFE ===== -->
-        <h2 id="day">📌 Day in the Life of a Security Analyst</h2>
-        <ul>
-            <li><strong style="color:#00d9ff;">Morning:</strong> Check SIEM alerts, review overnight incidents.</li>
-            <li><strong style="color:#00d9ff;">Afternoon:</strong> Investigate phishing emails, patch vulnerabilities.</li>
-            <li><strong style="color:#00d9ff;">Evening:</strong> Write reports, update threat intelligence feeds.</li>
-        </ul>
-
-        <hr/>
-
-        <!-- ===== FINAL THOUGHTS ===== -->
-        <h2 id="final">💭 Final Thoughts</h2>
         <p>
-            Security Analysts are the <strong>first line of defense</strong> against cyber threats. Start with Security+, practice log analysis, and aim for a SOC role to break into the field.
+            Unlike penetration testers who attack systems (with permission) to find weaknesses, security analysts <em>defend</em> them. They work in a <strong>Security Operations Center (SOC)</strong>, using tools like SIEM, EDR, and IDS to monitor network traffic, analyze logs, and investigate alerts.
         </p>
-        <p style="color:#00d9ff;font-size:18px;font-weight:700;text-align:center;">
-            🔐 Want a step-by-step learning plan? Let me know!
+        <p>
+            The role is one of the most <strong>in-demand and stable careers</strong> in cybersecurity. Every organization — from startups to banks to governments — needs analysts to protect their data. With millions of unfilled cybersecurity jobs worldwide, analysts are always in demand.
+        </p>
+        <div class="callout info">
+            <strong>💡 Note:</strong> Security Analyst roles are often classified into tiers: <em>Tier 1</em> (alert triage), <em>Tier 2</em> (investigation), and <em>Tier 3</em> (threat hunting, advanced response). We'll cover all three in this guide.
+        </div>
+    </section>
+
+    <!-- ===== 02 ROLE ===== -->
+    <section class="section" id="role">
+        <span class="section-number">02 · THE ROLE</span>
+        <h2 class="section-title">
+            <span class="icon">👤</span>
+            The Role Explained
+        </h2>
+
+        <h3>Core Responsibilities</h3>
+        <ul>
+            <li><strong>Monitor</strong> — Watch SIEM dashboards, alerts, and logs 24/7.</li>
+            <li><strong>Detect</strong> — Identify malicious activity from noise.</li>
+            <li><strong>Investigate</strong> — Analyze alerts to determine if they're real threats.</li>
+            <li><strong>Respond</strong> — Contain, eradicate, and recover from incidents.</li>
+            <li><strong>Report</strong> — Document findings for management and compliance.</li>
+            <li><strong>Improve</strong> — Tune rules, update playbooks, share intel.</li>
+            <li><strong>Hunt</strong> — Proactively search for threats that bypassed detection.</li>
+        </ul>
+
+        <h3>Where Analysts Work</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🏢</span>
+                <h4>In-House SOC</h4>
+                <p>Company-owned SOC monitoring internal infrastructure.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔐</span>
+                <h4>MSSP</h4>
+                <p>Managed Security Service Provider monitoring many clients.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🏦</span>
+                <h4>Finance / Banking</h4>
+                <p>Highly regulated industries with advanced threats.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🏛️</span>
+                <h4>Government</h4>
+                <p>Nation-state threats, critical infrastructure protection.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">☁️</span>
+                <h4>Cloud Providers</h4>
+                <p>Monitoring customer and internal infrastructure at scale.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">💼</span>
+                <h4>Consultancies</h4>
+                <p>Incident response firms and security consultancies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 03 SOC ===== -->
+    <section class="section" id="soc">
+        <span class="section-number">03 · INSIDE THE SOC</span>
+        <h2 class="section-title">
+            <span class="icon">🏢</span>
+            Inside the Security Operations Center
+        </h2>
+        <p>
+            The <strong>SOC</strong> (Security Operations Center) is where security analysts work. It's a command center — often with wall-mounted displays showing live threat maps, dashboards, and alerts. Some SOCs operate 24/7 in shifts; others are virtual or hybrid.
         </p>
 
-        <!-- ===== BOOK HIGHLIGHT ===== -->
-        <div class="book-highlight">
-            <p class="highlight-title">⭐ From Beginner to Professional Security Analyst</p>
-            <p style="color:#b0b8c8;">
-                Master the art of monitoring, detecting, and responding to cyber threats!
-            </p>
+        <h3>SOC Tiers</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Tier</th><th>Responsibility</th><th>Experience</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Tier 1</strong></td><td>Alert triage, initial investigation, escalation</td><td>0–2 years</td></tr>
+                    <tr><td><strong>Tier 2</strong></td><td>Deep investigation, incident response, threat hunting</td><td>2–4 years</td></tr>
+                    <tr><td><strong>Tier 3</strong></td><td>Advanced threat hunting, malware analysis, IR lead</td><td>4+ years</td></tr>
+                    <tr><td><strong>Engineer</strong></td><td>Build/maintain SIEM, automation, detection rules</td><td>3+ years</td></tr>
+                    <tr><td><strong>Manager</strong></td><td>Lead team, report metrics, coordinate with business</td><td>5+ years</td></tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- ===== FINAL CTA ===== -->
-        <div class="book-highlight" style="border-color:#ffcc00;background:linear-gradient(135deg,rgba(255,204,0,0.05),rgba(0,217,255,0.05));">
-            <p class="highlight-title" style="color:#ffcc00;">🛡️ Ready to Start Your Security Analyst Career?</p>
-            <p style="color:#b0b8c8;font-size:16px;">
-                Become the first line of defense against cyber threats. Start your journey today!
-            </p>
-            <br/>
-            <a class="main-link" href="https://www.amazon.com/dp/B0GTYGBHF5" target="_blank" rel="noopener" 
-               style="display:inline-block;padding:15px 42px;background:linear-gradient(135deg,#ffcc00,#ff9900);color:#000000 !important;border-radius:10px;font-weight:700;font-size:16px;text-decoration:none;transition:all 0.3s ease;letter-spacing:0.5px;">
-                🛒 Buy Now on Amazon
-            </a>
-            <p class="small-note" style="color:#6a7290 !important;font-size:13px;margin-top:12px;">
-                Start your security analyst journey today — Get your copy now!
-            </p>
+        <h3>SOC Operations Models</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🕐</span>
+                <h4>24/7 Dedicated</h4>
+                <p>Round-the-clock staffed SOC. Highest cost, highest coverage.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">☀️</span>
+                <h4>Business Hours</h4>
+                <p>Coverage during working hours. On-call after-hours.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Follow-the-Sun</h4>
+                <p>Global teams covering time zones. Popular at large enterprises.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🤝</span>
+                <h4>Co-Managed</h4>
+                <p>MSSP handles Tier 1, in-house handles Tier 2/3.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🏠</span>
+                <h4>Virtual SOC</h4>
+                <p>Remote analysts, cloud SIEM, no physical location.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">☁️</span>
+                <h4>MSSP Outsourced</h4>
+                <p>Entire SOC operated by a third party.</p>
+            </div>
         </div>
+    </section>
 
-        <hr/>
+    <!-- ===== 04 SKILLS ===== -->
+    <section class="section" id="skills">
+        <span class="section-number">04 · SKILLS</span>
+        <h2 class="section-title">
+            <span class="icon">🎓</span>
+            Essential Skills
+        </h2>
 
-        <!-- ===== SHARE SECTION ===== -->
-        <div class="share-section">
-            <p>📤 Share this book recommendation with your network</p>
-            <div class="share-buttons">
-                <a href="#" onclick="window.open('https://twitter.com/intent/tweet?text=Security%20Analyst%20-%20Complete%20Career%20Guide%20to%20Monitoring%2C%20Detecting%2C%20and%20Responding%20to%20Threats!%20%23SecurityAnalyst%20%23BlueTeam%20%23CyberSecurity','_blank');return false;">
-                    🐦 Twitter
-                </a>
-                <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'_blank');return false;">
-                    📘 Facebook
-                </a>
-                <a href="#" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url='+encodeURIComponent(window.location.href),'_blank');return false;">
-                    💼 LinkedIn
-                </a>
+        <h3>Technical Skills</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Networking</h4>
+                <p>TCP/IP, DNS, HTTP, firewalls, proxies, packet analysis.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🖥️</span>
+                <h4>Operating Systems</h4>
+                <p>Windows Event Logs, Linux syslog, macOS unified logs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📊</span>
+                <h4>SIEM Expertise</h4>
+                <p>Splunk, Elastic, Sentinel, QRadar — query languages.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔍</span>
+                <h4>Log Analysis</h4>
+                <p>Correlating events, understanding log formats.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🧠</span>
+                <h4>Threat Knowledge</h4>
+                <p>MITRE ATT&amp;CK, TTPs, malware behaviors, IOCs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🐍</span>
+                <h4>Scripting</h4>
+                <p>Python, PowerShell, KQL — for automation and hunting.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🛠️</span>
+                <h4>Forensics</h4>
+                <p>Memory, disk, network forensics — collect evidence.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">☁️</span>
+                <h4>Cloud Security</h4>
+                <p>AWS CloudTrail, Azure logs, GCP audit logs.</p>
             </div>
         </div>
 
-    </div>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li><strong>Analytical thinking</strong> — Piece together clues from many sources.</li>
+            <li><strong>Attention to detail</strong> — Miss one indicator and you miss the attack.</li>
+            <li><strong>Communication</strong> — Explain technical threats to executives.</li>
+            <li><strong>Composure under pressure</strong> — Stay calm during incidents.</li>
+            <li><strong>Curiosity</strong> — Always ask "what else could this be?".</li>
+            <li><strong>Continuous learning</strong> — New threats every day.</li>
+            <li><strong>Teamwork</strong> — SOC is a team sport.</li>
+        </ul>
+    </section>
+
+    <!-- ===== 05 DAILY ===== -->
+    <section class="section" id="daily">
+        <span class="section-number">05 · DAILY WORK</span>
+        <h2 class="section-title">
+            <span class="icon">⏰</span>
+            A Day in the Life
+        </h2>
+
+        <h3>Typical Shift</h3>
+        <ol>
+            <li><strong>Shift handover</strong> — Review open cases and ongoing incidents.</li>
+            <li><strong>Check SIEM dashboards</strong> — Look for new alerts overnight.</li>
+            <li><strong>Triage alerts</strong> — Investigate each alert, determine if real.</li>
+            <li><strong>Escalate real threats</strong> — Pass to Tier 2 for deeper investigation.</li>
+            <li><strong>Close false positives</strong> — Tune rules to reduce future noise.</li>
+            <li><strong>Monitor threat feeds</strong> — Stay updated on new vulnerabilities.</li>
+            <li><strong>Respond to incidents</strong> — Follow playbooks to contain threats.</li>
+            <li><strong>Document cases</strong> — Write clear notes in the ticketing system.</li>
+            <li><strong>Team standup</strong> — Share findings and lessons.</li>
+            <li><strong>Continuous improvement</strong> — Update playbooks, tune rules.</li>
+        </ol>
+
+        <h3>Alert Triage Workflow</h3>
+        <div class="code-block" data-lang="text">
+<code>Alert Fired
+    ↓
+Is it a false positive?  ──Yes──→  Close + tune rule
+    ↓ No
+Enrich with context: Who, What, When, Where
+    ↓
+Is it a known TTP?  ──Yes──→  Escalate with MITRE mapping
+    ↓ No
+Hunt for related activity (lateral, similar TTPs)
+    ↓
+Is the threat confirmed?  ──Yes──→  Trigger incident response
+    ↓ No
+Close with documentation of investigation</code>
+        </div>
+    </section>
+
+    <!-- ===== 06 SIEM ===== -->
+    <section class="section" id="siem">
+        <span class="section-number">06 · SIEM</span>
+        <h2 class="section-title">
+            <span class="icon">📊</span>
+            SIEM &amp; Log Analysis
+        </h2>
+        <p>
+            <strong>SIEM</strong> (Security Information and Event Management) is the analyst's central tool. It collects logs from across the environment, correlates events, and fires alerts when suspicious patterns are detected.
+        </p>
+
+        <h3>Top SIEM Platforms</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>SIEM</th><th>Vendor</th><th>Query Language</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Splunk</strong></td><td>Splunk</td><td>SPL</td></tr>
+                    <tr><td><strong>Elastic Security</strong></td><td>Elastic</td><td>KQL, Lucene</td></tr>
+                    <tr><td><strong>Microsoft Sentinel</strong></td><td>Microsoft</td><td>KQL</td></tr>
+                    <tr><td><strong>IBM QRadar</strong></td><td>IBM</td><td>AQL</td></tr>
+                    <tr><td><strong>Chronicle</strong></td><td>Google</td><td>YARA-L</td></tr>
+                    <tr><td><strong>Sumo Logic</strong></td><td>Sumo</td><td>Sumo Query</td></tr>
+                    <tr><td><strong>LogRhythm</strong></td><td>LogRhythm</td><td>Custom</td></tr>
+                    <tr><td><strong>Wazuh</strong></td><td>Open Source</td><td>Custom</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Common Log Sources</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🪟</span>
+                <h4>Windows Event Logs</h4>
+                <p>Security, System, Application — key event IDs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🐧</span>
+                <h4>Linux Logs</h4>
+                <p>auth.log, syslog, secure, auditd.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Network Logs</h4>
+                <p>Firewall, IDS/IPS, NetFlow, DNS.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🕸️</span>
+                <h4>Web Logs</h4>
+                <p>Apache, Nginx, IIS access logs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">☁️</span>
+                <h4>Cloud Logs</h4>
+                <p>CloudTrail, Azure Activity, GCP Audit.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🛡️</span>
+                <h4>Endpoint Logs</h4>
+                <p>EDR, AV, Sysmon.</p>
+            </div>
+        </div>
+
+        <h3>Key Windows Event IDs</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Event ID</th><th>Meaning</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><code>4624</code></td><td>Successful logon</td></tr>
+                    <tr><td><code>4625</code></td><td>Failed logon</td></tr>
+                    <tr><td><code>4648</code></td><td>Logon with explicit credentials</td></tr>
+                    <tr><td><code>4672</code></td><td>Special privileges assigned</td></tr>
+                    <tr><td><code>4688</code></td><td>Process creation</td></tr>
+                    <tr><td><code>4720</code></td><td>User account created</td></tr>
+                    <tr><td><code>4728</code></td><td>Member added to security group</td></tr>
+                    <tr><td><code>7045</code></td><td>New service installed</td></tr>
+                    <tr><td><code>1102</code></td><td>Audit log cleared</td></tr>
+                    <tr><td><code>4103</code></td><td>PowerShell module logging</td></tr>
+                    <tr><td><code>4104</code></td><td>PowerShell script block logging</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Sample SIEM Queries</h3>
+        <div class="code-block" data-lang="kql">
+<code><span class="cmt">// Find failed logins (Microsoft Sentinel KQL)</span>
+<span class="cls">SecurityEvent</span>
+| <span class="kw">where</span> EventID == <span class="num">4625</span>
+| <span class="kw">summarize</span> FailedCount = <span class="fn">count</span>() <span class="kw">by</span> Account, IpAddress
+| <span class="kw">where</span> FailedCount &gt; <span class="num">10</span>
+| <span class="kw">order by</span> FailedCount <span class="kw">desc</span>
+
+<span class="cmt">// Suspicious PowerShell encoded command</span>
+<span class="cls">SecurityEvent</span>
+| <span class="kw">where</span> EventID == <span class="num">4688</span>
+| <span class="kw">where</span> CommandLine <span class="kw">contains</span> <span class="str">"-EncodedCommand"</span>
+| <span class="kw">project</span> TimeGenerated, Computer, Account, CommandLine</code>
+        </div>
+    </section>
+
+    <!-- ===== 07 THREATS ===== -->
+    <section class="section" id="threats">
+        <span class="section-number">07 · THREAT DETECTION</span>
+        <h2 class="section-title">
+            <span class="icon">🔍</span>
+            Threat Detection
+        </h2>
+
+        <h3>Detection Methods</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">📜</span>
+                <h4>Signature-Based</h4>
+                <p>Match known IOCs — hashes, IPs, domains, YARA rules.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📊</span>
+                <h4>Anomaly-Based</h4>
+                <p>Detect deviations from baseline behavior.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🧠</span>
+                <h4>Behavioral</h4>
+                <p>Detect attacker techniques, not specific tools.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🎯</span>
+                <h4>Threat Hunting</h4>
+                <p>Proactively search for hidden threats.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Threat Intel</h4>
+                <p>Use feeds to identify known-bad actors.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🤖</span>
+                <h4>UEBA</h4>
+                <p>User/Entity Behavior Analytics with ML.</p>
+            </div>
+        </div>
+
+        <h3>Common Attack Indicators</h3>
+        <ul>
+            <li><strong>Brute force</strong> — Many failed logins in short time.</li>
+            <li><strong>Impossible travel</strong> — Logins from distant locations.</li>
+            <li><strong>Privilege escalation</strong> — New admin accounts or group memberships.</li>
+            <li><strong>Lateral movement</strong> — SMB, WMI, PsExec activity.</li>
+            <li><strong>Persistence</strong> — Scheduled tasks, services, registry keys.</li>
+            <li><strong>C2 beaconing</strong> — Regular outbound connections.</li>
+            <li><strong>Data exfiltration</strong> — Large outbound transfers.</li>
+            <li><strong>Log tampering</strong> — Event log cleared, audit disabled.</li>
+        </ul>
+
+        <div class="callout">
+            <strong>💡 Pro Tip:</strong> The best analysts don't just look for alerts — they think like attackers. Ask: <em>"If I were attacking this org, what would I do next?"</em>
+        </div>
+    </section>
+
+    <!-- ===== 08 IR ===== -->
+    <section class="section" id="ir">
+        <span class="section-number">08 · INCIDENT RESPONSE</span>
+        <h2 class="section-title">
+            <span class="icon">🚨</span>
+            Incident Response
+        </h2>
+        <p>
+            <strong>Incident Response (IR)</strong> is the systematic process of handling security incidents — from detection to recovery. Analysts are on the front lines.
+        </p>
+
+        <h3>The IR Lifecycle (NIST)</h3>
+        <ol>
+            <li><strong>Preparation</strong> — Policies, playbooks, tools, training.</li>
+            <li><strong>Detection &amp; Analysis</strong> — Identify and validate the incident.</li>
+            <li><strong>Containment</strong> — Stop the spread (short-term + long-term).</li>
+            <li><strong>Eradication</strong> — Remove the threat from the environment.</li>
+            <li><strong>Recovery</strong> — Restore systems to normal operation.</li>
+            <li><strong>Lessons Learned</strong> — Post-incident review and improvements.</li>
+        </ol>
+
+        <h3>Incident Severity Levels</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Level</th><th>Description</th><th>Response Time</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="sev sev-critical">Critical</span></td><td>Active breach, data exfiltration, ransomware</td><td>Immediate</td></tr>
+                    <tr><td><span class="sev sev-high">High</span></td><td>Confirmed compromise, widespread impact</td><td>&lt; 1 hour</td></tr>
+                    <tr><td><span class="sev sev-medium">Medium</span></td><td>Suspicious activity, limited scope</td><td>&lt; 4 hours</td></tr>
+                    <tr><td><span class="sev sev-low">Low</span></td><td>Isolated policy violations, minor events</td><td>&lt; 24 hours</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Incident Response Playbook — Example</h3>
+        <div class="code-block" data-lang="text">
+<code>Ransomware Playbook:
+────────────────────────
+1. ISOLATE affected endpoints (network isolation)
+2. NOTIFY IR team lead immediately
+3. IDENTIFY ransomware family (note file extension)
+4. CHECK for backups — validate integrity
+5. PRESERVE evidence (memory dump, disk image)
+6. IDENTIFY patient zero and infection vector
+7. WIPE and rebuild compromised systems
+8. RESTORE from clean backups
+9. MONITOR for re-infection
+10. DOCUMENT everything for legal/compliance</code>
+        </div>
+    </section>
+
+    <!-- ===== 09 INTEL ===== -->
+    <section class="section" id="threatintel">
+        <span class="section-number">09 · THREAT INTELLIGENCE</span>
+        <h2 class="section-title">
+            <span class="icon">🌐</span>
+            Threat Intelligence
+        </h2>
+        <p>
+            <strong>Threat Intelligence</strong> is knowledge about threats — who attacks, how they attack, and what indicators they leave. Analysts use it to enrich alerts and improve detection.
+        </p>
+
+        <h3>Types of Threat Intel</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🎯</span>
+                <h4>Strategic</h4>
+                <p>High-level trends — for executives and decision-makers.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">⚙️</span>
+                <h4>Tactical</h4>
+                <p>TTPs of attackers — for detection engineers.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔍</span>
+                <h4>Operational</h4>
+                <p>Campaigns and actors — for IR teams.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📊</span>
+                <h4>Technical</h4>
+                <p>IOCs — IPs, domains, hashes — for tools.</p>
+            </div>
+        </div>
+
+        <h3>Popular Threat Intel Sources</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Source</th><th>Type</th><th>Cost</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>MITRE ATT&amp;CK</strong></td><td>Framework</td><td>Free</td></tr>
+                    <tr><td><strong>VirusTotal</strong></td><td>Malware intel</td><td>Free / Paid</td></tr>
+                    <tr><td><strong>AlienVault OTX</strong></td><td>IOC sharing</td><td>Free</td></tr>
+                    <tr><td><strong>Abuse.ch</strong></td><td>Malware tracking</td><td>Free</td></tr>
+                    <tr><td><strong>Shodan</strong></td><td>Internet scanning</td><td>Free / Paid</td></tr>
+                    <tr><td><strong>GreyNoise</strong></td><td>Noise filtering</td><td>Free / Paid</td></tr>
+                    <tr><td><strong>Recorded Future</strong></td><td>Commercial TI</td><td>Paid</td></tr>
+                    <tr><td><strong>Mandiant</strong></td><td>Commercial TI</td><td>Paid</td></tr>
+                    <tr><td><strong>CrowdStrike Falcon X</strong></td><td>Commercial TI</td><td>Paid</td></tr>
+                    <tr><td><strong>CISA KEV</strong></td><td>Known exploited vulns</td><td>Free</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ===== 10 MITRE ===== -->
+    <section class="section" id="mitre">
+        <span class="section-number">10 · MITRE ATT&amp;CK</span>
+        <h2 class="section-title">
+            <span class="icon">🗺️</span>
+            MITRE ATT&amp;CK Framework
+        </h2>
+        <p>
+            <strong>MITRE ATT&amp;CK</strong> is the industry-standard knowledge base of <em>adversary tactics, techniques, and procedures</em>. Analysts use it to map detections, understand attacks, and communicate with other teams.
+        </p>
+
+        <h3>The 14 Tactics</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>#</th><th>Tactic</th><th>Goal</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Reconnaissance</td><td>Gather information</td></tr>
+                    <tr><td>2</td><td>Resource Development</td><td>Set up infrastructure</td></tr>
+                    <tr><td>3</td><td>Initial Access</td><td>Get into the network</td></tr>
+                    <tr><td>4</td><td>Execution</td><td>Run malicious code</td></tr>
+                    <tr><td>5</td><td>Persistence</td><td>Maintain access</td></tr>
+                    <tr><td>6</td><td>Privilege Escalation</td><td>Gain higher permissions</td></tr>
+                    <tr><td>7</td><td>Defense Evasion</td><td>Avoid detection</td></tr>
+                    <tr><td>8</td><td>Credential Access</td><td>Steal credentials</td></tr>
+                    <tr><td>9</td><td>Discovery</td><td>Explore the environment</td></tr>
+                    <tr><td>10</td><td>Lateral Movement</td><td>Move to other systems</td></tr>
+                    <tr><td>11</td><td>Collection</td><td>Gather data of interest</td></tr>
+                    <tr><td>12</td><td>Command &amp; Control</td><td>Communicate with attacker</td></tr>
+                    <tr><td>13</td><td>Exfiltration</td><td>Steal data</td></tr>
+                    <tr><td>14</td><td>Impact</td><td>Disrupt/destroy</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Example Technique Mapping</h3>
+        <div class="code-block" data-lang="text">
+<code>Tactic:          Execution
+Technique:       T1059 — Command and Scripting Interpreter
+Sub-technique:   T1059.001 — PowerShell
+Detection:       Event ID 4104, 4103, 4688 with PowerShell command
+Data Sources:    Process monitoring, PowerShell logs
+
+Tactic:          Credential Access
+Technique:       T1003 — OS Credential Dumping
+Sub-technique:   T1003.001 — LSASS Memory
+Detection:       Access to lsass.exe, procdump, mimikatz
+Data Sources:    Process monitoring, API monitoring</code>
+        </div>
+
+        <div class="callout">
+            <strong>💡 Pro Tip:</strong> Every detection rule should map to a MITRE technique. This helps measure coverage and communicate gaps to management.
+        </div>
+    </section>
+
+    <!-- ===== 11 TOOLS ===== -->
+    <section class="section" id="tools">
+        <span class="section-number">11 · TOOLKIT</span>
+        <h2 class="section-title">
+            <span class="icon">🧰</span>
+            The Analyst's Toolkit
+        </h2>
+
+        <h3>Core Tools</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Tools</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>SIEM</strong></td><td>Splunk, Elastic, Sentinel, QRadar</td></tr>
+                    <tr><td><strong>EDR</strong></td><td>CrowdStrike, SentinelOne, Defender for Endpoint, Carbon Black</td></tr>
+                    <tr><td><strong>NDR</strong></td><td>Darktrace, Vectra, Zeek, Suricata</td></tr>
+                    <tr><td><strong>Threat Intel</strong></td><td>MISP, OpenCTI, VirusTotal, AlienVault OTX</td></tr>
+                    <tr><td><strong>SOAR</strong></td><td>Splunk Phantom, Palo Alto XSOAR, Tines</td></tr>
+                    <tr><td><strong>Forensics</strong></td><td>Volatility, Autopsy, FTK, SANS SIFT</td></tr>
+                    <tr><td><strong>Malware</strong></td><td>Any.run, Joe Sandbox, Cuckoo</td></tr>
+                    <tr><td><strong>Network</strong></td><td>Wireshark, tcpdump, Zeek, Arkime</td></tr>
+                    <tr><td><strong>Vulnerability</strong></td><td>Nessus, Qualys, OpenVAS</td></tr>
+                    <tr><td><strong>Ticketing</strong></td><td>Jira, ServiceNow, TheHive</td></tr>
+                    <tr><td><strong>Documentation</strong></td><td>Confluence, Notion, Obsidian</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Free &amp; Open-Source Tools</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🦈</span>
+                <h4>Wireshark</h4>
+                <p>Network protocol analyzer — the classic tool for packet analysis.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔍</span>
+                <h4>Zeek</h4>
+                <p>Network monitoring framework — generates rich logs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🛡️</span>
+                <h4>Suricata</h4>
+                <p>IDS/IPS — signature and anomaly-based detection.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📊</span>
+                <h4>Wazuh</h4>
+                <p>Open-source SIEM + XDR — free Splunk alternative.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🐍</span>
+                <h4>Volatility</h4>
+                <p>Memory forensics — analyze RAM captures.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🎯</span>
+                <h4>YARA</h4>
+                <p>Pattern matching for malware identification.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔎</span>
+                <h4>Sysmon</h4>
+                <p>Windows system monitoring — high-value event logs.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Velociraptor</h4>
+                <p>Endpoint visibility and digital forensics at scale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 12 CAREER ===== -->
+    <section class="section" id="career">
+        <span class="section-number">12 · CAREER PATH</span>
+        <h2 class="section-title">
+            <span class="icon">🎓</span>
+            Career Path &amp; Growth
+        </h2>
+
+        <h3>Typical Career Progression</h3>
+        <ol>
+            <li><strong>IT Support / Helpdesk</strong> — Foundational IT knowledge.</li>
+            <li><strong>SOC Analyst Tier 1</strong> — Alert triage, initial investigation.</li>
+            <li><strong>SOC Analyst Tier 2</strong> — Deep investigation, incident response.</li>
+            <li><strong>SOC Analyst Tier 3</strong> — Threat hunting, malware analysis, IR lead.</li>
+            <li><strong>Senior Analyst / Team Lead</strong> — Mentor, lead incident response.</li>
+            <li><strong>SOC Manager</strong> — Manage team, report metrics, coordinate with business.</li>
+            <li><strong>Security Engineer / Architect</strong> — Build and design security programs.</li>
+            <li><strong>CISO</strong> — Executive leadership.</li>
+        </ol>
+
+        <h3>Salary Ranges (US, 2025)</h3>
+        <div class="stats-row">
+            <div class="stat-box">
+                <div class="stat-num">$65k</div>
+                <div class="stat-lbl">Tier 1 Analyst</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">$90k</div>
+                <div class="stat-lbl">Tier 2 Analyst</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">$125k</div>
+                <div class="stat-lbl">Tier 3 Analyst</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-num">$160k+</div>
+                <div class="stat-lbl">Lead / Manager</div>
+            </div>
+        </div>
+
+        <h3>Recommended Certifications</h3>
+        <ul>
+            <li><strong>CompTIA Security+</strong> — Entry-level foundation</li>
+            <li><strong>CompTIA CySA+</strong> — Cybersecurity Analyst — perfect for SOC roles</li>
+            <li><strong>CompTIA CASP+</strong> — Advanced security practitioner</li>
+            <li><strong>GIAC GSEC</strong> — Security Essentials</li>
+            <li><strong>GIAC GCIH</strong> — Certified Incident Handler</li>
+            <li><strong>GIAC GCIA</strong> — Certified Intrusion Analyst</li>
+            <li><strong>GIAC GCFA</strong> — Certified Forensic Analyst</li>
+            <li><strong>Microsoft SC-200</strong> — Security Operations Analyst</li>
+            <li><strong>Splunk Certified User/Power User</strong> — SIEM expertise</li>
+            <li><strong>Elastic Certified Analyst</strong> — Elastic SIEM</li>
+        </ul>
+
+        <h3>Free Training Resources</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🧪</span>
+                <h4>TryHackMe</h4>
+                <p>SOC Level 1 &amp; 2 paths — excellent for beginners.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🎯</span>
+                <h4>LetsDefend</h4>
+                <p>Hands-on SOC analyst training with real scenarios.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📚</span>
+                <h4>Blue Team Labs Online</h4>
+                <p>Practical blue team challenges.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🎓</span>
+                <h4>SANS Cyber Aces</h4>
+                <p>Free foundational security training.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🌐</span>
+                <h4>Microsoft Learn</h4>
+                <p>Free Sentinel &amp; Defender training.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🔍</span>
+                <h4>Splunk Free Training</h4>
+                <p>Free SPL training from Splunk.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 13 BEST ===== -->
+    <section class="section" id="best">
+        <span class="section-number">13 · BEST PRACTICES</span>
+        <h2 class="section-title">
+            <span class="icon">✅</span>
+            Analyst Best Practices
+        </h2>
+        <ol>
+            <li><strong>Document everything</strong> — Your notes save the next analyst hours.</li>
+            <li><strong>Verify before escalating</strong> — False escalations waste team time.</li>
+            <li><strong>Think like an attacker</strong> — Ask what the next move would be.</li>
+            <li><strong>Correlate, don't isolate</strong> — One alert is often part of a bigger picture.</li>
+            <li><strong>Enrich with context</strong> — Who, what, when, where — add to every alert.</li>
+            <li><strong>Use MITRE ATT&amp;CK</strong> — Map every detection to a technique.</li>
+            <li><strong>Automate the boring stuff</strong> — SOAR, scripts, and playbooks.</li>
+            <li><strong>Tune your rules</strong> — Reduce false positives continuously.</li>
+            <li><strong>Hunt proactively</strong> — Don't just wait for alerts.</li>
+            <li><strong>Stay current</strong> — Read threat intel, follow researchers on Twitter.</li>
+        </ol>
+
+        <h3>Key Metrics to Track</h3>
+        <ul>
+            <li><strong>MTTD</strong> — Mean Time to Detect</li>
+            <li><strong>MTTR</strong> — Mean Time to Respond</li>
+            <li><strong>Alert Volume</strong> — Total alerts per day/week</li>
+            <li><strong>False Positive Rate</strong> — % of alerts that aren't real</li>
+            <li><strong>Escalation Rate</strong> — % of alerts escalated to Tier 2</li>
+            <li><strong>Coverage</strong> — % of MITRE techniques with detections</li>
+            <li><strong>Mean Time to Contain</strong> — How fast incidents are stopped</li>
+        </ul>
+    </section>
+
+    <!-- ===== 14 LEGAL ===== -->
+    <section class="section" id="legal">
+        <span class="section-number">14 · LEGAL &amp; ETHICS</span>
+        <h2 class="section-title">
+            <span class="icon">⚖️</span>
+            Legal &amp; Ethical Boundaries
+        </h2>
+        <div class="callout warn">
+            <strong>⚠️ Critical Note:</strong> Security Analysts have access to <strong>highly sensitive data</strong> — user emails, credentials, financial records, personal information. Misusing this access is a <strong>serious breach of trust</strong> and may be a crime.
+        </div>
+
+        <h3>Ethical Principles</h3>
+        <ul>
+            <li><strong>Confidentiality</strong> — Never share what you see with anyone unauthorized.</li>
+            <li><strong>Least privilege</strong> — Only access what you need for the investigation.</li>
+            <li><strong>Accuracy</strong> — Report findings truthfully, even if you make a mistake.</li>
+            <li><strong>Privacy</strong> — Respect user privacy — monitor only what's necessary.</li>
+            <li><strong>Chain of custody</strong> — Handle evidence per legal requirements.</li>
+            <li><strong>Compliance</strong> — Follow GDPR, HIPAA, PCI DSS, and internal policies.</li>
+        </ul>
+
+        <h3>Legal Frameworks</h3>
+        <div class="use-grid">
+            <div class="use-card">
+                <span class="use-icon">🇪🇺</span>
+                <h4>GDPR</h4>
+                <p>EU data protection — strict rules on personal data handling.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">🏥</span>
+                <h4>HIPAA</h4>
+                <p>US healthcare — protect patient data.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">💳</span>
+                <h4>PCI DSS</h4>
+                <p>Payment card industry — protect cardholder data.</p>
+            </div>
+            <div class="use-card">
+                <span class="use-icon">📋</span>
+                <h4>SOX</h4>
+                <p>Financial reporting — controls and audit trails.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 15 CONCLUSION ===== -->
+    <section class="section" id="conclusion">
+        <span class="section-number">15 · CONCLUSION</span>
+        <h2 class="section-title">
+            <span class="icon">🎓</span>
+            Final Thoughts
+        </h2>
+        <p>
+            <strong>Security Analyst</strong> is one of the most <strong>rewarding and in-demand careers</strong> in cybersecurity. Every organization needs defenders, and the demand for skilled analysts continues to grow. The work is challenging, fast-paced, and constantly evolving — but that's exactly what makes it exciting.
+        </p>
+        <p>
+            The career path is clear: start at Tier 1, master the tools, learn to think like an attacker, and progress to Tier 2 and Tier 3. From there, you can move into threat hunting, incident response, security engineering, or management. Every step builds on the last.
+        </p>
+        <p>
+            Your learning journey:
+        </p>
+        <ol>
+            <li><strong>Learn networking and OS fundamentals</strong> — TCP/IP, Windows, Linux.</li>
+            <li><strong>Understand log sources</strong> — Windows Event Logs, syslog, cloud logs.</li>
+            <li><strong>Master a SIEM</strong> — Start with Wazuh (free) or Splunk Free.</li>
+            <li><strong>Practice on labs</strong> — TryHackMe SOC Level 1, LetsDefend, BTLO.</li>
+            <li><strong>Study MITRE ATT&amp;CK</strong> — Learn the framework inside out.</li>
+            <li><strong>Learn scripting</strong> — Python and KQL/SPL for automation.</li>
+            <li><strong>Get certified</strong> — Security+, CySA+, or GCIH.</li>
+            <li><strong>Apply for SOC analyst roles</strong> — Start Tier 1 and grow fast.</li>
+        </ol>
+        <div class="callout">
+            <strong>🚀 Next Steps:</strong> Sign up for TryHackMe's SOC Level 1 path today. Set up Wazuh or Splunk Free in a home lab, and start analyzing logs. Within a few months, you'll be ready to defend a real SOC.
+        </div>
+        <p style="text-align:center; margin-top: 30px; font-size: 17px; color: #00ff88; font-weight: 600;">
+            Stay vigilant — ethically. 🛡️
+        </p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="page-footer">
+        <p>© 2025 · <span class="brand">⚡ cyber·sume</span> · Security Analyst</p>
+        <p style="margin-top: 8px; font-size: 12px;">Complete Guide · Beginner to Advanced · Updated 2025</p>
+    </footer>
 
 </div>
+
+</body>
+</html>
